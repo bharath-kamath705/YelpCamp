@@ -2,3 +2,4 @@ npm init -y
 npm install express
 npm install ejs
 npm install mongoose
+npm install method-override
