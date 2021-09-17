@@ -1,11 +1,13 @@
 const path = require('path')
 const express = require('express')
 const methodOverride = require('method-override')
+const ejsMate = require('ejs-mate')
 const app = express()
 
 const startServer = function (){
     portNum = 3000
 
+    app.engine('ejs', ejsMate)
     app.set('views', path.join(__dirname, 'views'))
     app.set('view engine', 'ejs')
 

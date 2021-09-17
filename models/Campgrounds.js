@@ -5,7 +5,8 @@ const campgroundSchema = new Schema({
     title: String,
     price: String,
     description: String,
-    location: String
+    location: String,
+    image: String
 })
 
 const Campground = mongoose.model('campground', campgroundSchema);

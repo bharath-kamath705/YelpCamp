@@ -23,7 +23,8 @@ async function SaveRandomCampground() {
     const randomCity = getRandomItemFromArray(cities)
     const campground = new Campground({
         title: getRandomCampgroundName(),
-        location: `${randomCity.city}, ${randomCity.state}`
+        location: `${randomCity.city}, ${randomCity.state}`,
+        image: "https://source.unsplash.com/600x400/?hiking+trail"
     })
     await campground.save()
 }
