@@ -5,3 +5,4 @@ npm install ejs
 npm install mongoose
 npm install method-override
 npm install ejs-mate
+npm install joi
