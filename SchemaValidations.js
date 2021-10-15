@@ -7,3 +7,8 @@ module.exports.campgroundSchema =  Joi.object({
     description: Joi.optional().allow(String),
     image: Joi.optional().allow(String)
 })
+
+module.exports.reviewSchema =  Joi.object({
+    text: Joi.string().required(),
+    rating: Joi.number().integer().min(1).max(5).required()
+}).required()
