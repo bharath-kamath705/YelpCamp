@@ -14,7 +14,6 @@ const campgroundSchema = new mongoose.Schema({
 })
 
 campgroundSchema.post('findOneAndDelete', async function(doc){
-    console.log("Removed review refs from campground")
     await Review.remove({
         _id: {$in: doc.reviews}
     })

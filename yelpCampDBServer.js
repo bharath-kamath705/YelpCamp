@@ -6,7 +6,7 @@ const startServer = function(){
     const dbName = "yelp-camp";
     mongoose.connect(`mongodb://localhost:${port}/${dbName}`, {
         useNewUrlParser: true,
-        useUnifiedTopology: true
+        useUnifiedTopology: true,
         })
     .then((dat) => {
         console.log(`Connected to db ${dbName} on port ${port}`);
